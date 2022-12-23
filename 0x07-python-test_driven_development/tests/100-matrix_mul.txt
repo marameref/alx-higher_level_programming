@@ -1,0 +1,31 @@
+>>> matrix_mul = __import__('100-matrix_mul').matrix_mul
+>>> from subprocess import call
+>>> try:
+...     call(["pep8", "100-matrix_mul.py"])
+... except FileNotFoundError:
+...     print(0)
+0
+
+>>> try:
+...     matrix_mul("Holy", "Brail")
+... except TypeError as e:
+...     print(e)
+m_a must be a list
+
+>>> try:
+...     matrix_mul([[1, 2]], "Brail")
+... except TypeError as e:
+...     print(e)
+m_b must be a list
+
+>>> try:
+...     matrix_mul([], [[3, 4]])
+... except ValueError as e:
+...     print(e)
+m_a can't be empty
+
+>>> try:
+...     matrix_mul([[1, 2]], [])
+... except ValueError as e:
+...     print(e)
+m_b can't be empty
