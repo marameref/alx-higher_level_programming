@@ -1,0 +1,44 @@
+00:00:00.000363 main     VirtualBox XPCOM Server 6.1.38_Ubuntu r153438 linux.amd64 (Sep  7 2022 11:18:57) release log
+00:00:00.000366 main     Log opened 2023-02-15T16:57:40.097145000Z
+00:00:00.000367 main     Build Type: release
+00:00:00.000371 main     OS Product: Linux
+00:00:00.000372 main     OS Release: 5.15.79.1-microsoft-standard-WSL2
+00:00:00.000374 main     OS Version: #1 SMP Wed Nov 23 01:01:46 UTC 2022
+00:00:00.000405 main     Firmware type: BIOS
+00:00:00.000441 main     Host RAM: 3842MB (3.7GB) total, 2911MB (2.8GB) available
+00:00:00.000444 main     Executable: /usr/lib/virtualbox/VBoxSVC
+00:00:00.000445 main     Process ID: 4583
+00:00:00.000445 main     Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.001709 main     IPC socket path: /tmp/.vbox-root-ipc/ipcd
+00:00:00.107795 nspr-2   VirtualBox: object creation starts
+00:00:00.108094 nspr-2   Home directory: '/root/.config/VirtualBox'
+00:00:00.158696 nspr-2   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link status for dummy0: VBoxNetAdpCtl: ioctl failed: Operation not supported
+00:00:00.161319 nspr-2   HostDnsMonitor: initializing
+00:00:00.161828 nspr-2   NAT: resolv.conf: nameserver 172.25.144.1
+00:00:00.161881 nspr-2   HostDnsMonitor: updating information
+00:00:00.161913 nspr-2   HostDnsMonitor: old information
+00:00:00.161917 nspr-2     no server entries
+00:00:00.161920 nspr-2     no domain set
+00:00:00.161923 nspr-2     no search string entries
+00:00:00.161926 nspr-2   HostDnsMonitor: new information
+00:00:00.161929 nspr-2     server 1: 172.25.144.1
+00:00:00.161932 nspr-2     no domain set
+00:00:00.161935 nspr-2     no search string entries
+00:00:00.165468 nspr-2   VD: VDInit finished with VINF_SUCCESS
+00:00:00.165592 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={027bc463-929c-40e8-bf16-fea557cd8e7e} aComponent={SystemPropertiesWrap} aText={Cannot determine default Guest Additions ISO location. Most likely they are not available}, preserve=false aResultDetail=0
+00:00:00.167303 nspr-2   VirtualBox: object created
+00:00:00.725466 ExtPackInst ExtPack: Executing '/usr/lib/virtualbox/VBoxExtPackHelperApp' 'install' '--base-dir' '/usr/lib/virtualbox/ExtensionPacks' '--cert-dir' '/usr/share/virtualbox/ExtPackCertificates' '--name' 'Oracle VM VirtualBox Extension Pack' '--tarball' '/usr/share/virtualbox-ext-pack/Oracle_VM_VirtualBox_Extension_Pack-6.1.38.vbox-extpack' '--sha-256' '052f26cf8c619b1aa0cad94c05ece0c1ae326248b4746c95e1deb0729ae4417a'
+00:00:02.240335 ExtPackInst ExtPack: enmReason=1 iStatus=0 stderr='rcExit=RTEXITCODE_SUCCESS
+00:00:02.240338 ExtPackInst '
+00:00:02.241259 ExtPackInst ExtPackManager: Found extension pack 'Oracle VM VirtualBox Extension Pack'.
+00:00:02.241456 ExtPackInst ExtPackManager: Successfully installed extension pack 'Oracle VM VirtualBox Extension Pack'.
+00:00:02.241583 ExtPackInst OCI: Local config file '/root/.config/VirtualBox/oci_config' does not exist
+00:00:02.241607 ExtPackInst OCI: Original config file '/root/.oci/config' does not exist
+00:00:02.241611 ExtPackInst OCI: Reading profiles finished with status NS_OK
+00:00:02.241616 ExtPackInst ExtPack: Created cloud provider 'OCI' (hrc=NS_OK)
+00:00:07.249581 main     VirtualBox: object deletion starts
+00:00:07.250307 main     HostDnsMonitor: shutting down ...
+00:00:07.287350 main     HostDnsMonitor: shut down
+00:00:07.671136 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={d0a0163f-e254-4e5b-a1f2-011cf991c38d} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+00:00:12.287584 main     {00007f4804015cf0} HostPowerServiceLinux::~HostPowerServiceLinux: RTThreadWait() for 5000 ms failed with VERR_TIMEOUT
+00:00:12.288333 main     VirtualBox: object deleted
